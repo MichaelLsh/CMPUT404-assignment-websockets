@@ -59,3 +59,13 @@ Contributors
 * Mark Galloway
 * Abram Hindle
 * Cole Mackenzie
+
+Collaboration
+=============
+* Used Abram Hindle's WebSocketsExamples as my Websocket assignment's starting point
+* Use Shihao Liu's Ajax Assignment 4 code as my Websocket assignment's starting point
+
+
+Citations
+=========
+* 
