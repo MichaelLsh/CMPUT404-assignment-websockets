@@ -125,7 +125,7 @@ def subscribe_socket(ws):
     """
     client = Client()
     all_clients.append(client)
-    e = gevent.spawn(read_ws, ws, client)
+    g = gevent.spawn(read_ws, ws, client)
     try:
         while True:
             msg = client.get()
@@ -134,7 +134,7 @@ def subscribe_socket(ws):
         print("WS Error %s" % e)
     finally:
         all_clients.remove(client)
-        gevent.kill(e)
+        gevent.kill(g)
 
     return None
 

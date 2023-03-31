@@ -283,10 +283,20 @@ function wsSetup() {
         try {
             // debug("WebSocket Recv:" + msg.data);
             //XXX: TODO What are you going to do here?   
+            /*
             var msg = JSON.parse(msg.data);
             console.log('received here', msg);
             world = {...world, ...msg} 
             console.log(world); 
+            */
+            var data = JSON.parse(msg.data);
+            if (data) {
+                for (let key in data) {
+                    world[key] = data[key];
+                }
+                drawNextFrame();
+                drawFrame();
+            }
     } catch (e) {
         alert("socket on message: " + e);
     }
@@ -298,8 +308,8 @@ wsSetup();
 
 
 
-// 30 frames per second
-setInterval( update, 1000/30.0);
+// 100 frames per second
+setInterval( update, 1000/10.0);
 
 
     </script>
