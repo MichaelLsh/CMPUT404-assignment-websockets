@@ -64,7 +64,7 @@ Collaboration
 =============
 * Used Abram Hindle's WebSocketsExamples as my Websocket assignment's starting point
 * Use Shihao Liu's Ajax Assignment 4 code as my Websocket assignment's starting point
-
+* Jingyi Xu helped me with the Websocket assignment with some key hints 
 
 Citations
 =========
